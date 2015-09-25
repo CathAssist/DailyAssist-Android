@@ -175,7 +175,7 @@ public class PublicFunction {
         new AlertDialog.Builder(context)
                 .setTitle(R.string.app_name)
                 .setIcon(R.drawable.ic_launcher)
-                .setMessage(Html.fromHtml(context.getString(R.string.contact)))
+                .setMessage(Html.fromHtml(context.getString(R.string.contact,getVerName(context))))
                 .setNegativeButton(context.getString(android.R.string.ok),
                         new OnClickListener() {
                             @Override

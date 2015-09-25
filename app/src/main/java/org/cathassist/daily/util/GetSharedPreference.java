@@ -26,7 +26,7 @@ public class GetSharedPreference {
 	public static int getFontSize(Context context) {
 		SharedPreferences sharedPreferences = PreferenceManager
 				.getDefaultSharedPreferences(context);
-		return sharedPreferences.getInt(FONT_SIZE, 0);
+		return sharedPreferences.getInt(FONT_SIZE, 100);
 	}
 
 	public static void setFontSize(Context context, int fontsize){

@@ -56,7 +56,14 @@
       
         &lt;br /&gt;&lt;br /&gt; --> 
          </string>
-    <string name="contact">感谢对本应用的支持&lt;br /&gt;
+    <string name="contact">
+        本版本（%s）更新：&lt;br /&gt;
+        1.修复内容错乱，与标题不符的问题&lt;br /&gt;
+        2.更新界面&lt;br /&gt;
+        3.修复礼仪万年历在高分辨率手机，显示不全的问题&lt;br /&gt;
+        4.修复某些崩溃的问题&lt;br /&gt;
+        &lt;br /&gt;&lt;br /&gt;
+        感谢对本应用的支持&lt;br /&gt;
         				开发者：天主教小助手 &lt;br /&gt;
         				如果你有任何建议或疑问请联系我 &lt;br /&gt;
         				Email to: fly.workspace@gmail.com&lt;br /&gt;

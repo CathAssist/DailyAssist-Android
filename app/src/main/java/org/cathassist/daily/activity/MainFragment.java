@@ -10,7 +10,6 @@ import org.cathassist.daily.database.TodoDbAdapter;
 import org.cathassist.daily.provider.CalendarManager;
 import org.cathassist.daily.util.PublicFunction;
 
-import com.spreada.utils.chinese.ZHConverter;
 
 import android.content.Context;
 import android.content.Intent;
@@ -189,8 +188,6 @@ public final class MainFragment extends Fragment implements OnClickListener {
 			txtDayNature.setText(PublicFunction.getDayNatureString(
 					getActivity(), calendarDay.getMemorableDay()));
 			txtColor.setText(calendarDay.getColor());
-			ZHConverter converter = ZHConverter
-					.getInstance(ZHConverter.SIMPLIFIED);
 			// txtBible.setText();
 			// txtPray.setText();
 			setTextColor(calendarDay.getDayType(),

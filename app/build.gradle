@@ -14,7 +14,7 @@ android {
         multiDexEnabled true
         // 默认是umeng的渠道
         manifestPlaceholders = [UMENG_CHANNEL_VALUE: "umeng"]
-        resConfigs "en", "zh"
+        resConfigs "en", "zh", "zh-rCN"
     }
 
     lintOptions {

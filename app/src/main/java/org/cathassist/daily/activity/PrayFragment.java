@@ -7,7 +7,6 @@ import org.cathassist.daily.provider.EnumManager;
 import org.cathassist.daily.util.CreateHtmlFile;
 import org.cathassist.daily.util.GetSharedPreference;
 
-import com.spreada.utils.chinese.ZHConverter;
 
 import android.os.Bundle;
 import android.os.Environment;
@@ -154,8 +153,10 @@ public class PrayFragment extends Fragment {
     };
 
     private void updateGUI() {
-        ZHConverter converter = ZHConverter.getInstance(ZHConverter.SIMPLIFIED);
-        mWebView.loadUrl(testCreateHTML(converter.convert(dayContent
-                .getContent())));
+//        ZHConverter converter = ZHConverter.getInstance(ZHConverter.SIMPLIFIED);
+//        mWebView.loadUrl(testCreateHTML(converter.convert(dayContent
+//                .getContent())));
+        mWebView.loadUrl(testCreateHTML(dayContent
+                .getContent()));
     }
 }

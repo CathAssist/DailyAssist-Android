@@ -12,6 +12,7 @@ import java.util.Map;
 import org.cathassist.daily.PrayInEveryday;
 import org.cathassist.daily.R;
 import org.cathassist.daily.bean.CalendarDay;
+import org.cathassist.daily.util.DensityUtils;
 import org.cathassist.daily.util.PublicFunction;
 import org.cathassist.daily.util.TimeFormatter;
 
@@ -141,7 +142,7 @@ public class DailyListAdapter extends BaseExpandableListAdapter {
 
 	TextView getTextView(String showText) {
 		AbsListView.LayoutParams lp = new AbsListView.LayoutParams(
-				ViewGroup.LayoutParams.FILL_PARENT, 64);
+				ViewGroup.LayoutParams.FILL_PARENT, DensityUtils.dp2px(context, 48));
 		TextView textView = new TextView(context);
 		textView.setLayoutParams(lp);
 		textView.setGravity(Gravity.CENTER_VERTICAL);

@@ -4,8 +4,8 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 
 public class CreateHtmlFile {
-	private static final String mHtmlHead = "<!DOCTYPE html><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" /><title>无标题文档</title></head><body><p style=\"word-break:break-all\">";
-	private static final String mHtmlEnd = "</p></body></html>";
+	private static final String mHtmlHead = "<!DOCTYPE html><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" /><title>无标题文档</title></head><body>";
+	private static final String mHtmlEnd = "</body></html>";
 
 	public static void convert(String path, String content) {
 		try {

@@ -261,7 +261,7 @@ public class MainActivity extends AbsDoubleBackExitActivity implements Navigatio
                         calendarDay.setDate(dateString);
                         dbHelper.insertCalendarDay(calendarDay);
                         if (isLast) {
-                            Snackbar.make(navigationView, "FINISH" + dateString, Snackbar.LENGTH_SHORT).show();
+                            Snackbar.make(navigationView, "更新完成", Snackbar.LENGTH_SHORT).show();
                             mTabFragment.setDate(TimeFormatter.formatDateYYYYMMDD(Calendar.getInstance().getTimeInMillis()));
                             loadDate();
                             stopWaitingProgress();

@@ -61,7 +61,7 @@ android {
     productFlavors {
         dev {}
         home {}
-//        wandoujia {}
+        wandoujia {}
         _360 {}
         baidu {}
         xiaomi {}

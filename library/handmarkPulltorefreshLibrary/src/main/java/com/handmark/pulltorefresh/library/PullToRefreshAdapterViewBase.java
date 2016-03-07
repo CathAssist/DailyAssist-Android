@@ -45,8 +45,8 @@ public abstract class PullToRefreshAdapterViewBase<T extends AbsListView>
 		if (null != lp) {
 			newLp = new FrameLayout.LayoutParams(lp);
 
-			if (lp instanceof LinearLayout.LayoutParams) {
-				newLp.gravity = ((LinearLayout.LayoutParams) lp).gravity;
+			if (lp instanceof LayoutParams) {
+				newLp.gravity = ((LayoutParams) lp).gravity;
 			} else {
 				newLp.gravity = Gravity.CENTER;
 			}

@@ -12,7 +12,14 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/library" />
             <option value="$PROJECT_DIR$/library/handmarkPulltorefreshLibrary" />
-            <option value="$PROJECT_DIR$/library/umeng_update_lib" />
+          </set>
+        </option>
+        <option name="myModules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/library" />
+            <option value="$PROJECT_DIR$/library/handmarkPulltorefreshLibrary" />
           </set>
         </option>
       </GradleProjectSettings>

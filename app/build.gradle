@@ -2,12 +2,12 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 23
-    buildToolsVersion "23.0.0"
+    buildToolsVersion "23.0.2"
 
     defaultConfig {
         applicationId "org.cathassist.daily"
         minSdkVersion 9
-        targetSdkVersion 22
+        targetSdkVersion 23
         versionCode 11
         versionName "1.4"
         // dex突破65535的限制
@@ -103,13 +103,14 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile fileTree(dir: ':library:umenglib:libs', include: ['*.jar'])
-    compile 'com.android.support:support-v4:23.0.0'
-    compile 'com.android.support:appcompat-v7:23.0.0'
-    compile 'com.android.support:design:23.0.0'
-    compile 'com.umeng.analytics:analytics:latest.integration'
-    compile 'com.google.guava:guava:18.0'
-    compile 'com.mcxiaoke.volley:library:1.0.18'
+//    compile fileTree(dir: ':library:umeng_update_lib:libs', include: ['*.jar'])
+    compile 'com.android.support:support-v4:23.2.0'
+    compile 'com.android.support:appcompat-v7:23.2.0'
+    compile 'com.android.support:design:23.2.0'
+    compile 'com.umeng.analytics:analytics:5.6.4'
+    compile 'com.jiechic.library:umeng-update:2.6.1'
+    compile 'com.google.guava:guava:19.0'
+    compile 'com.mcxiaoke.volley:library:1.0.19'
     compile project(':library:handmarkPulltorefreshLibrary')
-    compile project(':library:umeng_update_lib')
+//    compile project(':library:umeng_update_lib')
 }

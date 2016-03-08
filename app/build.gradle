@@ -111,6 +111,6 @@ dependencies {
     compile 'com.jiechic.library:umeng-update:2.6.1'
     compile 'com.google.guava:guava:19.0'
     compile 'com.mcxiaoke.volley:library:1.0.19'
-//    compile project(':library:handmarkPulltorefreshLibrary')
+    compile project(':library:handmarkPulltorefreshLibrary')
 //    compile project(':library:umeng_update_lib')
 }

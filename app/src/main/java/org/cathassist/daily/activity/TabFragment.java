@@ -82,7 +82,7 @@ public class TabFragment extends Fragment {
 
     public ArrayList<Fragment> fragments(String date) {
         ArrayList<Fragment> fragmentList = new ArrayList<Fragment>();
-        for (int i = 0; i < 7; i++) {
+        for (int i = 0; i < 8; i++) {
             if (i == 0) {
                 fragmentList.add(MainFragment.newInstance(date));
             } else {
@@ -105,6 +105,9 @@ public class TabFragment extends Fragment {
                         break;
                     case 6:
                         fragment = PrayFragment.newInstance(date, 5);
+                        break;
+                    case 7:
+                        fragment = PrayFragment.newInstance(date,6);
                         break;
                     default:
                         fragment = PrayFragment.newInstance(date, 0);

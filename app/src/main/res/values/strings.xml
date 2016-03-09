@@ -32,6 +32,7 @@
     <string name="vesperae">晚祷</string>
     <string name="completorium">夜祷</string>
     <string name="mass">弥撒</string>
+    <string name="mercy_prayer">慈悲祷文</string>
     <string name="memorableday">纪念</string>
     <string name="qingri">庆日</string>
     <string name="jieri">节日</string>
@@ -91,4 +92,37 @@
 
     <string name="open_drawer">Open</string>
     <string name="close_drawer">Close</string>
+
+    <string name="mercy_prayer_text">教宗方济各──慈悲禧年祷文&lt;br /&gt;
+                                        &lt;br /&gt;
+                                        主耶稣基督，祢教导我们要如同天父满怀慈悲，&lt;br /&gt;
+                                        并告诉我们：看到祢，就是看见天父，&lt;br /&gt;
+                                        请向我们显示祢的面容，我们就能得救。&lt;br /&gt;
+                                        祢慈爱的目光，把匝凯和玛窦从金钱的奴役中释放出来，&lt;br /&gt;
+                                        使罪妇和玛达肋纳不再只从受造物中寻找幸福，&lt;br /&gt;
+                                        令伯多禄在背主后痛哭，&lt;br /&gt;
+                                        又把天堂应许给悔改的右盗。&lt;br /&gt;
+                                        让我们每人都能听到祢对撒玛黎雅妇人所说的：&lt;br /&gt;
+                                        “如果你知道天主的恩赐。”&lt;br /&gt;
+                                        &lt;br /&gt;
+                                        祢是不可见的天父可见的面容，&lt;br /&gt;
+                                        彰显天主宽恕和慈悲的力量；&lt;br /&gt;
+                                        愿教会成为祢在世上可见的面容：&lt;br /&gt;
+                                        祢是世界的光荣、复活之主。&lt;br /&gt;
+                                        祢容许祢的仆人也会陷入软弱，&lt;br /&gt;
+                                        好使他们对无知和犯错的人，能感同身受，&lt;br /&gt;
+                                        让向他们求助的人，能体会到被天主所寻觅、眷爱和宽恕。&lt;br /&gt;
+                                        &lt;br /&gt;
+                                        请派遣祢的圣神，以祂的傅油圣化我们每一个人，&lt;br /&gt;
+                                        愿慈悲禧年是上主广施恩宠之年，&lt;br /&gt;
+                                        愿祢的教会，以更新的热忱，&lt;br /&gt;
+                                        为穷苦者带来喜讯、&lt;br /&gt;
+                                        向俘虏和受压迫的人宣告自由、&lt;br /&gt;
+                                        使瞎子复明。&lt;br /&gt;
+                                        &lt;br /&gt;
+                                        &lt;br /&gt;
+                                        我们借玛利亚，慈悲之母的转祷，向祢祈求；&lt;br /&gt;
+                                        祢与圣父及圣神，是唯一天主，永生永王。&lt;br /&gt;
+                                        阿们。
+</string>
 </resources>

@@ -75,12 +75,16 @@ public class PrayFragment extends Fragment {
             }
 
         } else {
-            dayContent = new DayContent();
-            dbHelper = new TodoDbAdapter(getActivity());
-            dbHelper.open();
-            dayContent = dbHelper.getContent(dateString, contentType);
-            dbHelper.close();
-
+            if (contentType == 6) {
+                dayContent = null;
+                mWebView.loadUrl(testCreateHTML(getString(R.string.mercy_prayer_text)));
+            } else {
+                dayContent = new DayContent();
+                dbHelper = new TodoDbAdapter(getActivity());
+                dbHelper.open();
+                dayContent = dbHelper.getContent(dateString, contentType);
+                dbHelper.close();
+            }
 //            setting.setSupportZoom(true);
 //            setting.setBuiltInZoomControls(true);
             setting.setLayoutAlgorithm(WebSettings.LayoutAlgorithm.NARROW_COLUMNS);

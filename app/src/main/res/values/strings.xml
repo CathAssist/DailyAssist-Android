@@ -59,10 +59,9 @@
          </string>
     <string name="contact">
         本版本（%s）更新：&lt;br /&gt;
-        1.修复内容错乱，与标题不符的问题&lt;br /&gt;
-        2.更新界面&lt;br /&gt;
-        3.修复礼仪万年历在高分辨率手机，显示不全的问题&lt;br /&gt;
-        4.修复某些崩溃的问题&lt;br /&gt;
+        1.添加慈悲祷文&lt;br /&gt;
+        2.修复Android 6.0 无法显示内容的问题&lt;br /&gt;
+        3.修复某些崩溃的问题&lt;br /&gt;
         &lt;br /&gt;&lt;br /&gt;
         感谢对本应用的支持&lt;br /&gt;
         				开发者：天主教小助手 &lt;br /&gt;
@@ -93,7 +92,7 @@
     <string name="open_drawer">Open</string>
     <string name="close_drawer">Close</string>
 
-    <string name="mercy_prayer_text">教宗方济各──慈悲禧年祷文&lt;br /&gt;
+    <string name="mercy_prayer_text">&lt;strong&gt;教宗方济各──慈悲禧年祷文&lt;/strong&gt;&lt;br /&gt;
                                         &lt;br /&gt;
                                         主耶稣基督，祢教导我们要如同天父满怀慈悲，&lt;br /&gt;
                                         并告诉我们：看到祢，就是看见天父，&lt;br /&gt;

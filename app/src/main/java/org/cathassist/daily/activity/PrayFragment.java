@@ -77,7 +77,8 @@ public class PrayFragment extends Fragment {
         } else {
             if (contentType == 6) {
                 dayContent = null;
-                mWebView.loadUrl(testCreateHTML(getString(R.string.mercy_prayer_text)));
+                mWebView.loadData(CreateHtmlFile.getHtmlText(getString(R.string.mercy_prayer_text)),"text/html; charset=UTF-8", null);
+//                mWebView.loadUrl(testCreateHTML(getString(R.string.mercy_prayer_text)));
             } else {
                 dayContent = new DayContent();
                 dbHelper = new TodoDbAdapter(getActivity());
@@ -88,7 +89,7 @@ public class PrayFragment extends Fragment {
 //            setting.setSupportZoom(true);
 //            setting.setBuiltInZoomControls(true);
             setting.setLayoutAlgorithm(WebSettings.LayoutAlgorithm.NARROW_COLUMNS);
-
+            setting.setDefaultTextEncodingName("UTF-8");
             if (android.os.Build.VERSION.SDK_INT > 13) {
                 setting.setDisplayZoomControls(false);
                 setting.setTextZoom(GetSharedPreference.getFontSize(getActivity()));
@@ -132,7 +133,6 @@ public class PrayFragment extends Fragment {
     }
 
     public String testCreateHTML(String string) {
-
         String path = Environment.getExternalStorageDirectory().toString()
                 + "/" + System.currentTimeMillis() + "htmltemp";
         CreateHtmlFile.convert(path, string);
@@ -160,7 +160,8 @@ public class PrayFragment extends Fragment {
 //        ZHConverter converter = ZHConverter.getInstance(ZHConverter.SIMPLIFIED);
 //        mWebView.loadUrl(testCreateHTML(converter.convert(dayContent
 //                .getContent())));
-        mWebView.loadUrl(testCreateHTML(dayContent
-                .getContent()));
+        mWebView.loadData(CreateHtmlFile.getHtmlText(dayContent.getContent()),"text/html; charset=UTF-8", null);
+//        mWebView.loadUrl(testCreateHTML(dayContent
+//                .getContent()));
     }
 }

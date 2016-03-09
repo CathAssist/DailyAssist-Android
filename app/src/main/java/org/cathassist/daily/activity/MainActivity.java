@@ -66,7 +66,7 @@ public class MainActivity extends AbsDoubleBackExitActivity implements Navigatio
         navigationView = (NavigationView) findViewById(R.id.navigation_view);
         navigationView.setNavigationItemSelectedListener(this);
         drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
-        if (savedInstanceState != null) {
+        if (savedInstanceState != null && navigationView.getMenu().size() > 0) {
             navigationView.getMenu().getItem(savedInstanceState.getInt(SELECTED_TAG)).setChecked(true);
             return;
         }

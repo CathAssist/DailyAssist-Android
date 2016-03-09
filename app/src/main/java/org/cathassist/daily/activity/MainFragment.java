@@ -31,7 +31,7 @@ public final class MainFragment extends Fragment implements OnClickListener {
 	private String dateString;
 
 	private Button btnLaudes, btnHoramedia, btnMatutinum, btnVesperae,
-			btnCompletorium, btnMass, btnCalendar;
+			btnCompletorium, btnMass, btnCalendar, btnMercyPrayer;
 
 	public static MainFragment newInstance(String dateString) {
 		MainFragment fragment = new MainFragment();
@@ -108,6 +108,7 @@ public final class MainFragment extends Fragment implements OnClickListener {
 		btnVesperae = (Button) view.findViewById(R.id.btn_vesperae);
 		btnCompletorium = (Button) view.findViewById(R.id.btn_completorium);
 		btnMass = (Button) view.findViewById(R.id.btn_mass);
+		btnMercyPrayer = (Button) view.findViewById(R.id.btn_mercy_prayer);
 		btnCalendar = (Button) view.findViewById(R.id.btn_calendar);
 		txtColor = (TextView) view.findViewById(R.id.txt_color);
 	}
@@ -119,6 +120,7 @@ public final class MainFragment extends Fragment implements OnClickListener {
 		btnVesperae.setOnClickListener(this);
 		btnCompletorium.setOnClickListener(this);
 		btnMass.setOnClickListener(this);
+		btnMercyPrayer.setOnClickListener(this);
 		btnCalendar.setOnClickListener(this);
 	}
 
@@ -235,7 +237,9 @@ public final class MainFragment extends Fragment implements OnClickListener {
 					CalendarListActivity.class);
 			startActivity(intentCalendar);
 			break;
-		
+		case R.id.btn_mercy_prayer:
+			mListener.onArticleSelected(7);
+			break;
 		default:
 			break;
 		}

@@ -17,6 +17,9 @@
 #}
 -dontshrink
 -dontoptimize
+-keepattributes Exceptions,InnerClasses,Signature
+-keepattributes *Annotation*
+-keepattributes SourceFile,LineNumberTable
 -dontwarn java.lang.invoke**
 -dontwarn org.apache.lang.**
 -dontwarn org.apache.commons.**

@@ -188,6 +188,14 @@
                         android:text="@string/mass" >
                     </Button>
                 </LinearLayout>
+                <Button
+                        android:id="@+id/btn_mercy_prayer"
+                        android:layout_width="fill_parent"
+                        android:layout_height="54dp"
+                        android:layout_marginBottom="8dp"
+                        android:drawableLeft="@drawable/ic_mercy"
+                        android:text="@string/mercy_prayer" >
+                </Button>
             </LinearLayout>
         </LinearLayout>
 

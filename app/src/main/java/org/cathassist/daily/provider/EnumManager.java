@@ -74,6 +74,33 @@ public class EnumManager {
             }
             return string;
         }
+
+        public static int getContentTypeFromContentDataName(String contentDataName){
+            int contentType;
+            switch (contentDataName) {
+                case "lod":
+                    contentType = 0;
+                    break;
+                case "med":
+                    contentType = 1;
+                    break;
+                case "ves":
+                    contentType = 2;
+                    break;
+                case "comp":
+                    contentType = 3;
+                    break;
+                case "let":
+                    contentType = 4;
+                    break;
+                case "mass":
+                    contentType = 5;
+                    break;
+                default:
+                    contentType = -1;
+            }
+            return contentType;
+        }
     }
 
     public enum rank_t {

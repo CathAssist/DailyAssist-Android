@@ -106,9 +106,6 @@ public class TabFragment extends Fragment {
                     case 6:
                         fragment = PrayFragment.newInstance(date, 5);
                         break;
-                    case 7:
-                        fragment = PrayFragment.newInstance(date,6);
-                        break;
                     default:
                         fragment = PrayFragment.newInstance(date, 0);
                         break;

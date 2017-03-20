@@ -38,6 +38,8 @@ import org.cathassist.daily.util.NetworkTool;
 import org.cathassist.daily.util.PublicFunction;
 import org.cathassist.daily.util.PublicFunction.OnClickCancelListener;
 import org.cathassist.daily.util.TimeFormatter;
+import org.json.JSONArray;
+import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.Calendar;
@@ -250,12 +252,17 @@ public class MainActivity extends AbsDoubleBackExitActivity implements Navigatio
                         DayContent dayContent = new DayContent();
                         dayContent.setDate(dateString);
                         dayContent.setUpdateTime(c.getTimeInMillis() + "");
-                        for (int j = 0; j < ContentType.values().length; j++) {
-                            dayContent.setContentType(j);
-                            dayContent
-                                    .setContent(response.optString(ContentType
-                                            .getContentDataNameFromContentType(j)));
-                            dbHelper.insertContent(dayContent);
+                        JSONArray jsonArray = null;
+                        jsonArray = response.optJSONArray("items");
+                        for (int j = 0; j < jsonArray.length(); j++) {
+                            JSONObject item = jsonArray.optJSONObject(j);
+                            int contentType = ContentType.getContentTypeFromContentDataName(item.optString("key"));
+                            if (contentType >= 0) {
+                                dayContent.setContentType(contentType);
+                                dayContent
+                                        .setContent(item.optString("content"));
+                                dbHelper.insertContent(dayContent);
+                            }
                         }
                         CalendarDay calendarDay = new CalendarDay();
                         calendarDay.setDate(dateString);

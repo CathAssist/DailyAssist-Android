@@ -192,10 +192,6 @@ public class CalendarListActivity extends BaseActivity {
 				}
 			}, mCalendar.get(Calendar.YEAR), mCalendar.get(Calendar.MONTH), mCalendar.get(Calendar.DAY_OF_MONTH));
 			datePickerDialog.show();
-			DatePicker dp = findDatePicker((ViewGroup) datePickerDialog.getWindow().getDecorView());  
-			if (dp != null) {  
-			    ((ViewGroup)((ViewGroup) dp.getChildAt(0)).getChildAt(0)).getChildAt(2).setVisibility(View.GONE);  
-			} 
 			break;
 		case R.id.calendar_back:
 			backToTime(Calendar.getInstance());

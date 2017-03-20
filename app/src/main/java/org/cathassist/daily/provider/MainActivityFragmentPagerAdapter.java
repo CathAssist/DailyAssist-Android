@@ -33,7 +33,7 @@ public class MainActivityFragmentPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public int getCount() {
-        return 8;
+        return 7;
     }
 
     @Override
@@ -53,8 +53,6 @@ public class MainActivityFragmentPagerAdapter extends FragmentPagerAdapter {
                 return context.getString(R.string.completorium);
             case 6:
                 return context.getString(R.string.mass);
-            case 7:
-                return context.getString(R.string.mercy_prayer);
             default:
                 return "";
         }
